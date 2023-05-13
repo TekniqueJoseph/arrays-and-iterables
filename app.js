@@ -1,5 +1,5 @@
 const numbers = [1, 2, 3];
-console.log(numbers)
+// console.log(numbers)
 
 // const moreNumbers = new Array(5) //defines the arraylength. new keyword optional
 // console.log(moreNumbers)
@@ -8,12 +8,12 @@ console.log(numbers)
 // console.log(yetMoreNumbers)
 
 const listItems = document.querySelectorAll('#mainList li')
-console.log(listItems)
+// console.log(listItems);
 
 const li = Array.from(listItems) // converts listItems from NodeList 2 Array
-console.log(li);
+// console.log(li);
 
 for (let fruit of li) {
-    console.log(fruit) // displays the li's
+    // console.log(fruit); // displays the li's
 }
 
