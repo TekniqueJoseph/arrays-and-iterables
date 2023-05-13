@@ -30,10 +30,14 @@ for (let fruit of li) {
 // console.log(personalData[1])
 
 const hobbies = ['Sports', 'Cooking'];
-hobbies.push('Reading'); // returns array length
-hobbies.unshift('Coding'); // returns array length
-const poppedValue = hobbies.pop();
-console.log(`${poppedValue} got popped yo!`)
+hobbies.push('Reading'); //ads item to end. returns array length
+hobbies.unshift('Coding'); //ads item to start. returns array length
+const poppedValue = hobbies.pop(); // removes from end
+hobbies.shift() // removes from start
+console.log(hobbies);
+
+hobbies[1] = 'Coding'
+hobbies[5] ='reading'
 console.log(hobbies);
 
 
