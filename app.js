@@ -18,7 +18,7 @@ for (let fruit of li) {
 }
 
 // const hobbies = ['Cooking', 'Sports'];
-// const personalData = [53, 'Joseph', {moreDerails: []}]
+// const personalData = [52, 'Joseph', {moreDerails: []}]
 
 // const analyticsData = [[1, 1.6], [-5.4, 2.3]]
 // for (const data of analyticsData) {
