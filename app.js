@@ -17,15 +17,23 @@ for (let fruit of li) {
     // console.log(fruit); // displays the li's
 }
 
-const hobbies = ['Cooking', 'Sports'];
-const personalData = [53, 'Joseph', {moreDerails: []}]
+// const hobbies = ['Cooking', 'Sports'];
+// const personalData = [53, 'Joseph', {moreDerails: []}]
 
-const analyticsData = [[1, 1.6], [-5.4, 2.3]]
-for (const data of analyticsData) {
-    for (const dataPoints of data) {
-    console.log(dataPoints)
-    }
-}
+// const analyticsData = [[1, 1.6], [-5.4, 2.3]]
+// for (const data of analyticsData) {
+//     for (const dataPoints of data) {
+//     console.log(dataPoints)
+//     }
+// }
 
-console.log(personalData[1])
+// console.log(personalData[1])
+
+const hobbies = ['Sports', 'Cooking'];
+hobbies.push('Reading'); // returns array length
+hobbies.unshift('Coding'); // returns array length
+const poppedValue = hobbies.pop();
+console.log(`${poppedValue} got popped yo!`)
+console.log(hobbies);
+
 
