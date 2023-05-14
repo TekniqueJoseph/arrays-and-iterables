@@ -59,5 +59,5 @@ console.log(storedResults, testResults);
 console.log(testResults.indexOf(1.5)) //returns first occurence of
 console.log(testResults.lastIndexOf(1.5)) //returns last occurence of
 
-const personData =[{name: 'Max'}, {name: 'Candace'}];
-console.log(personData.indexOf({name: 'Candace'}))
+const personData = [{name: 'Max'}, {name: 'Candace'}];
+console.log(personData.indexOf({name: 'Candace'})) // dosent work on objects
