@@ -46,3 +46,13 @@ for (let fruit of li) {
 // const removedElements = hobbies.splice(-2, 1)// negative starts from end
 // console.log(hobbies)
 // console.log(removedElements)
+
+const testResults = [1, 5.3, 1.5, 10.99, -5, 10];
+// const storedResults = testResults; //shallow copy(changes to 1 affects the other) 
+// const storedResults = testResults.slice() // shallow still, [] allows discrete change
+// const storedResults = testResults.slice(2) // used to return a portion of an array
+const storedResults = testResults.concat([3.99, 2]); //returns new array concating added values
+
+testResults.push(5.91)
+
+console.log(storedResults, testResults)
