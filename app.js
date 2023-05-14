@@ -44,6 +44,5 @@ hobbies.splice(1, 0, 'Good Food')
 console.log(hobbies)
 
 const removedElements = hobbies.splice(-2, 1)
-
 console.log(hobbies)
 console.log(removedElements)
