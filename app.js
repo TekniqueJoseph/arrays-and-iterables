@@ -47,12 +47,17 @@ for (let fruit of li) {
 // console.log(hobbies)
 // console.log(removedElements)
 
-const testResults = [1, 5.3, 1.5, 10.99, -5, 10];
+const testResults = [1, 5.3, 1.5, 10.99, 1.5, -5, 10];
 // const storedResults = testResults; //shallow copy(changes to 1 affects the other) 
 // const storedResults = testResults.slice() // shallow still, [] allows discrete change
 // const storedResults = testResults.slice(2) // used to return a portion of an array
 const storedResults = testResults.concat([3.99, 2]); //returns new array concating added values
 
-testResults.push(5.91)
+testResults.push(5.91);
 
-console.log(storedResults, testResults)
+console.log(storedResults, testResults);
+console.log(testResults.indexOf(1.5)) //returns first occurence of
+console.log(testResults.lastIndexOf(1.5)) //returns last occurence of
+
+const personData =[{name: 'Max'}, {name: 'Candace'}];
+console.log(personData.indexOf({name: 'Candace'}))

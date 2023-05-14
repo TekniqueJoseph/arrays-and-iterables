@@ -3,7 +3,7 @@
 }
 body{
     margin: 0 auto;
-    background-image: linear-gradient(to right, #c6e5e2, #a8ded5, #8bd7c3, #70cfae, #59c696);
+    /* background-image: linear-gradient(to right, #c6e5e2, #a8ded5, #8bd7c3, #70cfae, #59c696); */
 }
 .menu{
     display: flex;
