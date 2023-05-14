@@ -29,20 +29,20 @@ for (let fruit of li) {
 
 // console.log(personalData[1])
 
-const hobbies = ['Sports', 'Cooking'];
-hobbies.push('Reading'); //ads item to end. returns array length
-hobbies.unshift('Coding'); //ads item to start. returns array length
-const poppedValue = hobbies.pop(); // removes from end
-hobbies.shift() // removes from start
-console.log(hobbies);
+// const hobbies = ['Sports', 'Cooking'];
+// hobbies.push('Reading'); //ads item to end. returns array length
+// hobbies.unshift('Coding'); //ads item to start. returns array length
+// const poppedValue = hobbies.pop(); // removes from end. returns removed 
+// hobbies.shift() // removes from start. returns removed
+// console.log(hobbies);
 
-hobbies[1] = 'Coding'
-// hobbies[5] ='reading'
-console.log(hobbies, hobbies[4]);
+// hobbies[1] = 'Coding'
+// // hobbies[5] ='reading'
+// console.log(hobbies, hobbies[4]);
 
-hobbies.splice(1, 0, 'Good Food')
-console.log(hobbies)
+// hobbies.splice(1, 0, 'Good Food') //used to add or removed wherever. returns removed
+// console.log(hobbies)
 
-const removedElements = hobbies.splice(-2, 1)
-console.log(hobbies)
-console.log(removedElements)
+// const removedElements = hobbies.splice(-2, 1)// negative starts from end
+// console.log(hobbies)
+// console.log(removedElements)
