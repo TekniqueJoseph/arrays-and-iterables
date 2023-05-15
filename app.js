@@ -3,19 +3,19 @@ const enter = document.getElementById('enter')
 const closeModal = document.getElementById('xModal')
 const modal = document.getElementById("myModal");
 
-const openModal = () => {
+const openM = () => {
     modal.style.display = "block";
     return
 }
 
-const snap = () => {
+const closeM = () => {
     modal.style.display = "none";
     return
 }
 
-btn.addEventListener('click', openModal)
-enter.addEventListener('click', snap)
-closeModal.addEventListener('click', snap)
+btn.addEventListener('click', openM)
+enter.addEventListener('click', closeM)
+closeModal.addEventListener('click', closeM)
 window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
