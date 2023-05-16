@@ -124,6 +124,7 @@ nav .menuList{
     cursor: pointer;
     background-color: black;
     color: #fff;
+    /* border:2px solid #fff; */
 }
 .bottom{
     grid-area: 3/1/4/5;
