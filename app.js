@@ -9,65 +9,19 @@ const enter = document.getElementById('enter')
 const closeModal = document.getElementById('xModal')
 const modal = document.getElementById("myModal");
 
-
-    ul1.addEventListener('click', function(e) {
+const setColor = ((e) => {
     let target = e.target;
-    console.log(target)
-    // let parent = target.parentNode;
-    // console.log(parent)
-    // let index = [].indexOf.call(parent.children, target);
     let tColor = target.style.color;
-    if(tColor === 'white') {
+    if(tColor !== 'mediumseagreen') {
         target.style.color = 'mediumseagreen'
     } else {
         target.style.color = 'white'
     }
-  });
-  ul2.addEventListener('click', function(e) {
-    let target = e.target;
-    console.log(target)
-    // let parent = target.parentNode;
-    // console.log(parent)
-    // let index = [].indexOf.call(parent.children, target);
-    let tColor = target.style.color;
-    if(tColor === 'white') {
-        target.style.color = 'mediumseagreen'
-    } else {
-        target.style.color = 'white'
-    }
-  });
-  ul3.addEventListener('click', function(e) {
-    let target = e.target;
-    console.log(target)
-    // let parent = target.parentNode;
-    // console.log(parent)
-    // let index = [].indexOf.call(parent.children, target);
-    let tColor = target.style.color;
-    if(tColor === 'white') {
-        target.style.color = 'mediumseagreen'
-    } else {
-        target.style.color = 'white'
-    }
-  });
-  ul4.addEventListener('click', function(e) {
-    let target = e.target;
-    console.log(target)
-    // let parent = target.parentNode;
-    // console.log(parent)
-    // let index = [].indexOf.call(parent.children, target);
-    let tColor = target.style.color;
-    if(tColor === 'white') {
-        target.style.color = 'mediumseagreen'
-    } else {
-        target.style.color = 'white'
-    }
-  });
-  
-
+})
 
 const swap = () => {
     let tColor = h1.style.color;
-    if(tColor === 'aliceblue') {
+    if(tColor !== 'mediumseagreen') {
         h1.style.color = 'mediumseagreen'
     } else {
         h1.style.color = 'aliceblue'
@@ -76,13 +30,12 @@ const swap = () => {
 
 const change = () => {
     const eColor = h3.style.color;
-    if(eColor === 'aliceblue') {
+    if(eColor !== 'mediumseagreen') {
         h3.style.color = 'mediumseagreen'
     } else {
         h3.style.color = 'aliceblue'
     }
 }
-
 
 const openM = () => {
     modal.style.display = "block";
@@ -94,6 +47,18 @@ const closeM = () => {
     return
 }
 
+ul1.addEventListener('click', function(e) {
+    setColor(e)
+  });
+ul2.addEventListener('click', function(e) {
+    setColor(e)
+  });
+ul3.addEventListener('click', function(e) {
+    setColor(e)
+  });
+ul4.addEventListener('click', function(e) {
+    setColor(e)
+  });
 h1.addEventListener('click', swap)
 h3.addEventListener('click', change)
 btn.addEventListener('click', openM)
