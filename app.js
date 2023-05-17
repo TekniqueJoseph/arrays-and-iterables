@@ -1,7 +1,27 @@
+const h1 = document.getElementById('logo')
+const h3 = document.getElementById('end')
 const btn = document.getElementById("myBtn");
 const enter = document.getElementById('enter')
 const closeModal = document.getElementById('xModal')
 const modal = document.getElementById("myModal");
+
+const swap = () => {
+    const tColor = h1.style.color;
+    if(tColor === 'aliceblue') {
+        h1.style.color = 'mediumseagreen'
+    } else {
+        h1.style.color = 'aliceblue'
+    }
+}
+
+const change = () => {
+    const eColor = h3.style.color;
+    if(eColor === 'aliceblue') {
+        h3.style.color = 'mediumseagreen'
+    } else {
+        h3.style.color = 'aliceblue'
+    }
+}
 
 const openM = () => {
     modal.style.display = "block";
@@ -13,6 +33,8 @@ const closeM = () => {
     return
 }
 
+h1.addEventListener('click', swap)
+h3.addEventListener('click', change)
 btn.addEventListener('click', openM)
 enter.addEventListener('click', closeM)
 closeModal.addEventListener('click', closeM)
@@ -147,5 +169,13 @@ const sortedPrices = prices.sort((a, b) =>{
         return -1;
     }
 })
-console.log(sortedPrices.reverse())
+console.log(sortedPrices.reverse());
+
+// const filteredArray = prices.filter((price, idx, prices) => {
+//     return price > 6;
+// });
+
+const filteredArray = prices.filter(price => price > 6)
+
+console.log(filteredArray)
 

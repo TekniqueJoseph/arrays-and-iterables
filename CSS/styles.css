@@ -20,6 +20,9 @@ body{
     align-items: center;
     opacity: .8;
 }
+.menu h1:hover{
+    cursor: pointer;
+}
 nav .menuList{
     display: flex; 
     list-style-type: none;   
@@ -130,11 +133,15 @@ nav .menuList{
     grid-area: 3/1/4/5;
     text-align: center;
     background-color: black;
-    color: #fff;
+    color: aliceblue;
     opacity: .8;
 }
 .bottom h3{
     margin-top: 2.5rem; 
+}
+
+.bottom h3:hover {
+    cursor: pointer;
 }
 
 /* The Modal (background) */
