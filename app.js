@@ -6,7 +6,7 @@ const closeModal = document.getElementById('xModal')
 const modal = document.getElementById("myModal");
 
 const swap = () => {
-    const tColor = h1.style.color;
+    let tColor = h1.style.color;
     if(tColor === 'aliceblue') {
         h1.style.color = 'mediumseagreen'
     } else {
@@ -22,6 +22,7 @@ const change = () => {
         h3.style.color = 'aliceblue'
     }
 }
+
 
 const openM = () => {
     modal.style.display = "block";

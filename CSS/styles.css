@@ -137,7 +137,9 @@ nav .menuList{
     opacity: .8;
 }
 .bottom h3{
-    margin-top: 2.5rem; 
+    width: fit-content;
+    margin:0 auto;
+    margin-top: 2.0rem; 
 }
 
 .bottom h3:hover {
