@@ -205,3 +205,30 @@ const filteredArray = prices.filter(price => price > 6)
 
 console.log(filteredArray)
 
+// let sum = 0;
+// prices.forEach((price) => {
+//     sum += price
+// })
+// console.log(sum)
+
+const sum1 = prices.reduce((prevVal, curr) => {
+    return prevVal + curr
+}, 0); 
+
+const sum2 = prices.reduce((prevVal, curr) => prevVal + curr, 0)
+
+console.log(sum2)
+
+const originalArray = [{price: 10.99}, {price: 5.99}, {price: 29.99}];
+const sum3 = originalArray.map(obj => obj.price).reduce((sumVal, curVal) => sumVal + curVal, 0);
+
+console.log(sum3)
+
+const data = 'new york;10.99;2000';
+const transformedData = data.split(';')
+transformedData[1] = +transformedData[1]
+console.log(transformedData)
+
+const nameFragments =  ['Joseph', 'Jackson'];
+const name = nameFragments.join(' ')
+console.log(name)
