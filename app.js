@@ -1,4 +1,7 @@
-let ul = document.getElementById('spade')
+let ul1 = document.getElementById('spade1')
+let ul2 = document.getElementById('spade2')
+let ul3 = document.getElementById('spade3')
+let ul4 = document.getElementById('spade4')
 const h1 = document.getElementById('logo')
 const h3 = document.getElementById('end')
 const btn = document.getElementById("myBtn");
@@ -7,18 +10,56 @@ const closeModal = document.getElementById('xModal')
 const modal = document.getElementById("myModal");
 
 
-
-    ul.addEventListener('click', function(e) {
+    ul1.addEventListener('click', function(e) {
     let target = e.target;
     console.log(target)
-    let parent = target.parentNode;
-    let index = [].indexOf.call(parent.children, target);
-    let tColor = index.style.color;
-    console.log('hello')
+    // let parent = target.parentNode;
+    // console.log(parent)
+    // let index = [].indexOf.call(parent.children, target);
+    let tColor = target.style.color;
     if(tColor === 'white') {
-        index.style.color = 'mediumseagreen'
+        target.style.color = 'mediumseagreen'
     } else {
-        index.style.color = 'white'
+        target.style.color = 'white'
+    }
+  });
+  ul2.addEventListener('click', function(e) {
+    let target = e.target;
+    console.log(target)
+    // let parent = target.parentNode;
+    // console.log(parent)
+    // let index = [].indexOf.call(parent.children, target);
+    let tColor = target.style.color;
+    if(tColor === 'white') {
+        target.style.color = 'mediumseagreen'
+    } else {
+        target.style.color = 'white'
+    }
+  });
+  ul3.addEventListener('click', function(e) {
+    let target = e.target;
+    console.log(target)
+    // let parent = target.parentNode;
+    // console.log(parent)
+    // let index = [].indexOf.call(parent.children, target);
+    let tColor = target.style.color;
+    if(tColor === 'white') {
+        target.style.color = 'mediumseagreen'
+    } else {
+        target.style.color = 'white'
+    }
+  });
+  ul4.addEventListener('click', function(e) {
+    let target = e.target;
+    console.log(target)
+    // let parent = target.parentNode;
+    // console.log(parent)
+    // let index = [].indexOf.call(parent.children, target);
+    let tColor = target.style.color;
+    if(tColor === 'white') {
+        target.style.color = 'mediumseagreen'
+    } else {
+        target.style.color = 'white'
     }
   });
   

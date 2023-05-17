@@ -73,6 +73,10 @@ nav .menuList{
     color: white;
 }
 
+.cardList li:hover{
+    cursor: pointer;
+}
+
 .imgCard{
     /* margin-top: 1rem;  */
     width: 98%;
