@@ -9,9 +9,8 @@ const modal = document.getElementById("myModal");
 
 
     ul.addEventListener('click', function(e) {
-       
     let target = e.target;
-    console.log('hello')
+    console.log(target)
     let parent = target.parentNode;
     let index = [].indexOf.call(parent.children, target);
     let tColor = index.style.color;
@@ -19,7 +18,7 @@ const modal = document.getElementById("myModal");
     if(tColor === 'white') {
         index.style.color = 'mediumseagreen'
     } else {
-        index.style.color = 'aliceblue'
+        index.style.color = 'white'
     }
   });
   
