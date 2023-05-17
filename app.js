@@ -5,6 +5,7 @@ const enter = document.getElementById('enter')
 const closeModal = document.getElementById('xModal')
 const modal = document.getElementById("myModal");
 
+
 const swap = () => {
     let tColor = h1.style.color;
     if(tColor === 'aliceblue') {
