@@ -1,9 +1,28 @@
+let ul = document.getElementById('spade')
 const h1 = document.getElementById('logo')
 const h3 = document.getElementById('end')
 const btn = document.getElementById("myBtn");
 const enter = document.getElementById('enter')
 const closeModal = document.getElementById('xModal')
 const modal = document.getElementById("myModal");
+
+
+
+    ul.addEventListener('click', function(e) {
+       
+    let target = e.target;
+    console.log('hello')
+    let parent = target.parentNode;
+    let index = [].indexOf.call(parent.children, target);
+    let tColor = index.style.color;
+    console.log('hello')
+    if(tColor === 'white') {
+        index.style.color = 'mediumseagreen'
+    } else {
+        index.style.color = 'aliceblue'
+    }
+  });
+  
 
 
 const swap = () => {
