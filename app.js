@@ -216,12 +216,10 @@ const sum1 = prices.reduce((prevVal, curr) => {
 }, 0); 
 
 const sum2 = prices.reduce((prevVal, curr) => prevVal + curr, 0)
-
 console.log(sum2)
 
 const originalArray = [{price: 10.99}, {price: 5.99}, {price: 29.99}];
 const sum3 = originalArray.map(obj => obj.price).reduce((sumVal, curVal) => sumVal + curVal, 0);
-
 console.log(sum3)
 
 const data = 'new york;10.99;2000';
