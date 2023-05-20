@@ -1,39 +1,56 @@
-// const ids = new Set(['Hi', 'from', 'set!', ]);
-// ids.add(2);
-// if (ids.has('Hi')){
-//     ids.delete('Hi')
+// // const ids = new Set(['Hi', 'from', 'set!', ]);
+// // ids.add(2);
+// // if (ids.has('Hi')){
+// //     ids.delete('Hi')
+// // }
+
+// // // console.log(ids.entries())
+
+// // for (const entry of ids.entries()){
+// //     console.log(entry[0])
+// // }
+
+// const person1 = {name: 'Jasmine'}
+// const person2 = {name: 'Lisa'}
+
+// const personData = new Map([[person1, [{date: 'yesterday', price: 10}]]])
+
+// personData.set(person2, [{date: 'two weeks ago', price: 100}])
+
+// // console.log(personData)
+// // console.log(personData.get(person1))
+
+// for (const entry of personData.entries()){ //returns key and value
+//     console.log(entry)
 // }
 
-// // console.log(ids.entries())
-
-// for (const entry of ids.entries()){
-//     console.log(entry[0])
+// for (const [key, value] of personData.entries()){ //use of destructuring gets keys and values
+//     console.log(key, value)
 // }
 
-const person1 = {name: 'Jasmine'}
-const person2 = {name: 'Lisa'}
+// for (const key of personData.keys()){  // gets just keys
+//     console.log(key)
+// }
 
-const personData = new Map([[person1, [{date: 'yesterday', price: 10}]]])
+// for (const value of personData.values()){ // gets just values
+//     console.log(value)
+// }
 
-personData.set(person2, [{date: 'two weeks ago', price: 100}])
+// console.log(personData.size)
 
-// console.log(personData)
-// console.log(personData.get(person1))
+let person = {name: 'Bonnie'}
+const persons = new WeakSet()
+persons.add(person)
 
-for (const entry of personData.entries()){ //returns key and value
-    console.log(entry)
-}
+// ddd
+// person = null;
 
-for (const [key, value] of personData.entries()){ //use of destructuring gets keys and values
-    console.log(key, value)
-}
+console.log(persons)
 
-for (const key of personData.keys()){  // gets just keys
-    console.log(key)
-}
+const personaData = new WeakMap()
+personaData.set(person, 'Extra Info!')
 
-for (const value of personData.values()){ // gets just values
-    console.log(value)
-}
+person = null
 
-// for
+console.log(personaData)
+
