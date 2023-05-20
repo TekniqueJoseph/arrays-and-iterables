@@ -237,7 +237,7 @@ console.log(nameFragments, copiedMamedFragments)
 
 console.log(Math.min(...prices))
 
-const persons = [{name: 'Joyce', age:52}, {name: 'Chell', age: 51}] 
+const persons = [{name: 'Joyce', age:52}, {name: 'Chell', age: 52}] 
 const copiedPersons = persons.map(person =>({
     name: person.name, 
     age: person.age }))
