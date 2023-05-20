@@ -183,6 +183,12 @@ const taxAdjustedPrices = prices.map((price, idx, prices) => {
     return priceObj 
 });
 
+const myPrices = ((first, second, ...restOfPrices) =>{
+    return restOfPrices
+})
+
+console.log('Rest Of Prices', myPrices(41.48, 28.99, 56.55, 74.51, 18.77))
+
 // console.log(taxAdjustedPrices)
 // console.log(prices, taxAdjustedPrices)
 
