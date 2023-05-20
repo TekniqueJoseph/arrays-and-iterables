@@ -38,19 +38,19 @@
 
 // console.log(personData.size)
 
-let person = {name: 'Bonnie'}
-const persons = new WeakSet()
-persons.add(person)
+// let person = {name: 'Bonnie'}
+// const persons = new WeakSet()
+// persons.add(person)
 
-// ddd
-// person = null;
+// // ddd
+// // person = null;
 
-console.log(persons)
+// console.log(persons)
 
-const personaData = new WeakMap()
-personaData.set(person, 'Extra Info!')
+// const personaData = new WeakMap()
+// personaData.set(person, 'Extra Info!')
 
-person = null
+// person = null
 
-console.log(personaData)
+// console.log(personaData)
 
