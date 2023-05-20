@@ -231,9 +231,9 @@ const nameFragments =  ['Joseph', 'Jackson'];
 const name = nameFragments.join(' ')
 // console.log(name)
 
-const copiedMamedFragments = [...nameFragments]
+const copiedNamedFragments = [...nameFragments]
 nameFragments.push('Mr.')
-console.log(nameFragments, copiedMamedFragments)
+console.log(nameFragments, copiedNamedFragments)
 
 console.log(Math.min(...prices))
 
