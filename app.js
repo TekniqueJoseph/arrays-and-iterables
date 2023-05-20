@@ -258,5 +258,5 @@ const nameData = ['Jasmine', 'Guy', 'Mrs.', 59];
 // const lastName = nameData[1];
 
 const [firstName, lastName, ...otherInfo] = nameData; //destructuring nameData array
-console.log(firstName, lastName, otherInfo)
-console.log(otherInfo)
+// console.log(firstName, lastName, otherInfo)
+// console.log(otherInfo)
