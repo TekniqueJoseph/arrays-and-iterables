@@ -20,6 +20,20 @@ personData.set(person2, [{date: 'two weeks ago', price: 100}])
 // console.log(personData)
 // console.log(personData.get(person1))
 
-for (const entry of personData.entries()){
+for (const entry of personData.entries()){ //returns key and value
     console.log(entry)
 }
+
+for (const [key, value] of personData.entries()){ //use of destructuring gets keys and values
+    console.log(key, value)
+}
+
+for (const key of personData.keys()){  // gets just keys
+    console.log(key)
+}
+
+for (const value of personData.values()){ // gets just values
+    console.log(value)
+}
+
+// for
