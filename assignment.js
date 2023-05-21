@@ -34,7 +34,7 @@ const findMax = ((...args)=>{
 findMax(2,8,55,99,22,36)
 findMax(...array)
 
-const [smallest, largest,...other] = array; 
+const [one, two,...other] = array; 
 const findMax3 = ((...args)=>{
     const biggest = args.sort((a,b)=>{
         if (a > b) {
