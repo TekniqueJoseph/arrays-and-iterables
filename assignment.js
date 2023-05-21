@@ -31,10 +31,9 @@ const findMax = ((...args)=>{
     }) 
     console.log('2',biggest.pop())
 })
-findMax(2,8,55,99,22,36)
+// findMax(2,8,55,99,22,36)
 findMax(...array)
 
-const [one, two,...other] = array; 
 const findMax3 = ((...args)=>{
     const biggest = args.sort((a,b)=>{
         if (a > b) {
@@ -50,15 +49,14 @@ const findMax3 = ((...args)=>{
     // return [biggest.shift(),biggest.pop(),]
     let finish = [smallest, largest]
     const [small, large] = finish
-    const little = small;
-    const big = large;
-    console.log(little)
-    console.log(big)
+    console.log('3a',small, large)
+    // console.log(big)
     return finish
 })
 
-console.log(findMax3(2,8,55,99,23,36))
-console.log(findMax3(...array))
+// console.log(findMax3(2,8,55,99,23,36))
+findMax3(...array)
+// console.log(findMax3(...array))
 // findMax3(smallest,largest)
 // console.log(findMax3)
 
@@ -74,9 +72,9 @@ const findWithD = ((...args)=>{
     })
     return [biggest.shift(),biggest.pop(),]
 })
-const [minL, maxL] = findWithD(2,8,55,99,23,36)
+// const [minL, maxL] = findWithD(2,8,55,99,23,36)
 const [minA, maxA] = findWithD(...array)
-console.log('3a',minL, maxL)
+// console.log('3a',minL, maxL)
 console.log('3b',minA, maxA)
 
 const ids = new Set([1,2 ,3]);
