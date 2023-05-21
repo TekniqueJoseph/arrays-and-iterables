@@ -55,16 +55,32 @@ const findMax3 = ((...args)=>{
     console.log(little)
     console.log(big)
     return finish
-
 })
+
 console.log(findMax3(2,8,55,99,23,36))
 console.log(findMax3(...array))
 // findMax3(smallest,largest)
 // console.log(findMax3)
 
+const findWithD = ((...args)=>{
+    const biggest = args.sort((a,b)=>{
+        if (a > b) {
+        return 1;
+        } else if (a === b) {
+            return 0;
+        } else {
+            return -1;
+        } 
+    })
+    return [biggest.shift(),biggest.pop(),]
+})
+const [minL, maxL] = findWithD(2,8,55,99,23,36)
+const [minA, maxA] = findWithD(...array)
+console.log('3a',minL, maxL)
+console.log('3b',minA, maxA)
+
 const ids = new Set([1,2 ,3]);
 ids.add(2);
-
 console.log(ids)
 
 
