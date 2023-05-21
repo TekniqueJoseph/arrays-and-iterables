@@ -57,7 +57,7 @@ const findMax3 = ((...args)=>{
     return finish
 
 })
-console.log(findMax3(2,8,55,99,22,36))
+console.log(findMax3(2,8,55,99,23,36))
 console.log(findMax3(...array))
 // findMax3(smallest,largest)
 // console.log(findMax3)
