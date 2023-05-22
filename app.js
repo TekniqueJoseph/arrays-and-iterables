@@ -175,80 +175,91 @@ for (let fruit of li) {
 // // console.log(taxAdjustedPrices)
 // console.log(taxAdjustedPrices)
 
-const prices = [10.99, 5.99, 3.99, 6.59];
-const tax = 0.19;
+// const prices = [10.99, 5.99, 3.99, 6.59];
+// const tax = 0.19;
 
-const taxAdjustedPrices = prices.map((price, idx, prices) => {
-    const priceObj = {index: idx, taxAdjPrice: price * (1 + tax)}
-    return priceObj 
-});
-
-// console.log(taxAdjustedPrices)
-// console.log(prices, taxAdjustedPrices)
-
-const sortedPrices = prices.sort((a, b) =>{
-    if (a > b) {
-        return 1;
-    } else if (a === b) {
-        return 0;
-    } else {
-        return -1;
-    }
-})
-// console.log(sortedPrices.reverse());
-
-// const filteredArray = prices.filter((price, idx, prices) => {
-//     return price > 6;
+// const taxAdjustedPrices = prices.map((price, idx, prices) => {
+//     const priceObj = {index: idx, taxAdjPrice: price * (1 + tax)}
+//     return priceObj 
 // });
 
-const filteredArray = prices.filter(price => price > 6)
-
-// console.log(filteredArray)
-
-// let sum = 0;
-// prices.forEach((price) => {
-//     sum += price
+// const myPrices = ((first, second, ...restOfPrices) =>{
+//     return restOfPrices
 // })
-// console.log(sum)
 
-const sum1 = prices.reduce((prevVal, curr) => {
-    return prevVal + curr
-}, 0); 
+// console.log('Rest Of Prices', myPrices(41.48, 28.99, 56.55, 74.51, 18.77))
 
-const sum2 = prices.reduce((prevVal, curr) => prevVal + curr, 0)
-// console.log(sum2)
+// // console.log(taxAdjustedPrices)
+// // console.log(prices, taxAdjustedPrices)
 
-const originalArray = [{price: 10.99}, {price: 5.99}, {price: 29.99}];
-const sum3 = originalArray.map(obj => obj.price).reduce((sumVal, curVal) => sumVal + curVal, 0);
-// console.log(sum3)
+// const sortedPrices = prices.sort((a, b) =>{
+//     if (a > b) {
+//         return 1;
+//     } else if (a === b) {
+//         return 0;
+//     } else {
+//         return -1;
+//     }
+// })
+// // console.log(sortedPrices.reverse());
 
-const data = 'new york;10.99;2000';
-const transformedData = data.split(';')
-transformedData[1] = +transformedData[1]
-// console.log(transformedData)
+// // const filteredArray = prices.filter((price, idx, prices) => {
+// //     return price > 6;
+// // });
 
-const nameFragments =  ['Joseph', 'Jackson'];
-const name = nameFragments.join(' ')
-// console.log(name)
+// const filteredArray = prices.filter(price => price > 6)
 
-const copiedMamedFragments = [...nameFragments]
-nameFragments.push('Mr.')
-console.log(nameFragments, copiedMamedFragments)
+// // console.log(filteredArray)
 
-console.log(Math.min(...prices))
+// // let sum = 0;
+// // prices.forEach((price) => {
+// //     sum += price
+// // })
+// // console.log(sum)
 
-const persons = [
-                 {name: 'Joyce', 
-                  age:52}, 
-                 {name: 'Chell', 
-                  age: 49}
-                ] 
+// const sum1 = prices.reduce((prevVal, curr) => {
+//     return prevVal + curr
+// }, 0); 
 
+// const sum2 = prices.reduce((prevVal, curr) => prevVal + curr, 0)
+// // console.log(sum2)
+
+// const originalArray = [{price: 10.99}, {price: 5.99}, {price: 29.99}];
+// const sum3 = originalArray.map(obj => obj.price).reduce((sumVal, curVal) => sumVal + curVal, 0);
+// // console.log(sum3)
+
+// const data = 'new york;10.99;2000';
+// const transformedData = data.split(';')
+// transformedData[1] = +transformedData[1]
+// // console.log(transformedData)
+
+// const nameFragments =  ['Joseph', 'Jackson'];
+// const name = nameFragments.join(' ')
+// // console.log(name)
+
+// const copiedNamedFragments = [...nameFragments]
+// nameFragments.push('Mr.')
+// console.log(nameFragments, copiedNamedFragments)
+
+// console.log(Math.min(...prices))
+
+// const persons = [{name: 'Joyce', age:52}, {name: 'Chell', age: 52}] 
+// const copiedPersons = persons.map(person =>({
+//     name: person.name, 
+//     age: person.age }))
+
+// persons.push({name: 'Tonya', age: 50})
+// persons[0].age = 55;
+
+const persons = [{name: 'Joyce', age:52}, {name: 'Chell', age: 49}] 
 const copiedPersons = persons.map(person =>({
     name: person.name, 
     age: person.age }))
 
-persons.push({name: 'Tonya', age: 50})
-persons[0].age = 55;
+const nameData = ['Jasmine', 'Guy', 'Mrs.', 59];
+// const firstName = nameData[0];
+// const lastName = nameData[1];
 
-console.log(persons, copiedPersons)
+const [firstName, lastName, ...otherInfo] = nameData; //destructuring nameData array
+// console.log(firstName, lastName, otherInfo)
+// console.log(otherInfo)
